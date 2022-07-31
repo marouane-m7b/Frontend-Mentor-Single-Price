@@ -1,0 +1,132 @@
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--Light-Gray);
+}
+html, body {
+  height: 100%;
+  background-color: #e6eff6;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.wrapper {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+.container {
+  width: 700px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  border-radius:  10px;
+  -webkit-border-radius:  10px;
+  -moz-border-radius:  10px;
+  -ms-border-radius:  10px;
+  -o-border-radius:  10px;
+  overflow: hidden;
+}
+@media (max-width: 691px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+.join {
+  grid-column: 1 / 7;
+  background-color: white;
+  padding: 30px 40px 20px 30px;
+}
+@media (max-width: 691px) {
+  .join {
+    grid-column: 1/2;
+  }
+}
+.join h2 {
+  color: hsl(179, 62%, 43%);
+  font-size: 25px;
+  padding: 15px 0;
+  margin: 0;
+}
+.join h3 {
+  color: hsl(71, 73%, 54%);
+  padding: 15px 0;
+  margin: 0;
+}
+.join p {
+  color: hsl(218, 22%, 67%);
+  padding: 10px 0 15px;
+  margin: 0;
+  line-height: 1.6;
+}
+.sub {
+  grid-column: 1/4;
+  background-color: hsl(179, 62%, 43%);
+  padding: 20px 40px 20px 30px;
+}
+@media (max-width: 691px) {
+  .sub{
+    grid-column: 1/2;
+  }
+}
+.sub h3 {
+  color: white;
+}
+.sub .full-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sub .full-price .price {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.sub .full-price span {
+  color: hsl(204, 43%, 93%);
+}
+.sub p {
+  margin-top: 5px;
+  color: #fff;
+  font-size: 15px;
+}
+.sub .btn {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  width: calc(100% - 10px);
+  margin: 30px auto 20px;
+  padding: 15px 0;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  text-align: center;
+  box-shadow: 4px 5px 20px 0px #0000006e;
+}
+.us {
+  grid-column: 4 / 7;
+  background-color: #4abebd;
+  padding: 20px 40px 20px 30px;
+}
+@media (max-width: 691px) {
+  .us {
+    grid-column: 1/2;
+  }
+}
+.us h3 {
+  color: #fff;
+}
+.us p {
+  margin-right: 35px;
+  color: hsl(204, 43%, 93%);
+}
